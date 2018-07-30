@@ -1,5 +1,6 @@
 package com.saipatham.sannidhanamlive;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebChromeClient(webChromeClient);
         // Call private class InsideWebViewClient
         webView.setWebViewClient(new MainActivity.InsideWebViewClient());
-
+        webView.setBackgroundColor(Color.TRANSPARENT);
         // Navigate anywhere you want, but consider that this classes have only been tested on YouTube's mobile site
         //webView.loadUrl("http://m.youtube.com");
         webView.loadUrl("https://gaming.youtube.com/embed/live_stream?channel=UC8Ng0leZ6m0aYxt6629MAXg&autoplay=1&version=3&rel=0&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent");
